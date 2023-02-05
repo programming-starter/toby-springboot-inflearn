@@ -20,6 +20,8 @@ public class TobySpringbootInflearnApplication {
         ServletWebServerFactory serverFactory = new TomcatServletWebServerFactory();
         // tomcat, netty, ... 여러가지 웹 서버를 가져오려고 추상화핸놓음.
         WebServer webServer = serverFactory.getWebServer(servletContext -> {
+            HelloController helloController = new HelloController();
+
             servletContext.addServlet("frontcontroller", new HttpServlet() {
                 @Override
                 protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,10 +30,12 @@ public class TobySpringbootInflearnApplication {
                             && req.getMethod().equals(HttpMethod.GET.name())) {
                         String name = req.getParameter("name");
 
+                        String ret = helloController.hello(name);
+
                         // response
                         resp.setStatus(HttpStatus.OK.value());
                         resp.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN_VALUE);
-                        resp.getWriter().print("Hello " + name);
+                        resp.getWriter().print(ret);
                     } else if (req.getRequestURI().equals("/user")) {
                         //
                     } else {
