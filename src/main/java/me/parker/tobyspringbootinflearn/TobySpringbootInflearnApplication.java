@@ -1,8 +1,9 @@
 package me.parker.tobyspringbootinflearn;
 
+import me.parker.config.MySpringBootApplication;
 import org.springframework.boot.SpringApplication;
 
-@MySpringBootAnnotation
+@MySpringBootApplication
 public class TobySpringbootInflearnApplication {
 
     public static void main(String[] args) {
