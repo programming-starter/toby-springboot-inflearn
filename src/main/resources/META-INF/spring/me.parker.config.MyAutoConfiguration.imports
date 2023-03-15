@@ -1,3 +1,4 @@
+me.parker.config.autoconfig.PropertyPlaceholderConfig
 me.parker.config.autoconfig.TomcatWebServerConfig
 me.parker.config.autoconfig.JettyWebServerConfig
 me.parker.config.autoconfig.DispatcherServletConfig
