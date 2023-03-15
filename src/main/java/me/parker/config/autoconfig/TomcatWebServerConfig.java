@@ -1,6 +1,7 @@
 package me.parker.config.autoconfig;
 
 import me.parker.config.ConditionalMyOnClass;
+import me.parker.config.EnableMyConfigurationProperties;
 import me.parker.config.MyAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.apache.catalina.startup.Tomcat")
+@EnableMyConfigurationProperties(ServerProperties.class)
 public class TomcatWebServerConfig {
 
     @Bean("tomcatWebServerFactory")

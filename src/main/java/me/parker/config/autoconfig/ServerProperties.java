@@ -1,5 +1,8 @@
 package me.parker.config.autoconfig;
 
+import me.parker.config.MyConfigurationProperties;
+
+@MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
     private String contextPath;
     private int port;

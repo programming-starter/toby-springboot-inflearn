@@ -1,4 +1,4 @@
-me.parker.config.autoconfig.ServerPropertiesConfig
+me.parker.config.autoconfig.PropertyPostProcessConfig
 me.parker.config.autoconfig.PropertyPlaceholderConfig
 me.parker.config.autoconfig.TomcatWebServerConfig
 me.parker.config.autoconfig.JettyWebServerConfig
