@@ -1,6 +1,0 @@
-me.parker.config.autoconfig.DataSourceConfig
-me.parker.config.autoconfig.PropertyPostProcessConfig
-me.parker.config.autoconfig.PropertyPlaceholderConfig
-me.parker.config.autoconfig.TomcatWebServerConfig
-me.parker.config.autoconfig.JettyWebServerConfig
-me.parker.config.autoconfig.DispatcherServletConfig

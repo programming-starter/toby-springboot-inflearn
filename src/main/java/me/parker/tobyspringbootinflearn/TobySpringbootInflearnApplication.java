@@ -1,12 +1,12 @@
 package me.parker.tobyspringbootinflearn;
 
-import me.parker.config.MySpringBootApplication;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.annotation.PostConstruct;
 
-@MySpringBootApplication
+@SpringBootApplication
 public class TobySpringbootInflearnApplication {
 
     private final JdbcTemplate jdbcTemplate;
